@@ -1,0 +1,95 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+
+    <span class="toolbar-left">
+    <button mat-icon-button (click)="opened=!opened" class="btn-nav"><mat-icon>menu</mat-icon></button>
+      <img src="/assets/earth.jpg" class="img-logo">
+    </span>
+
+    <span class="toolbar-right">
+      <label class="lbl-user">{{user}}</label>
+      <img src="assets/lakshan.jpg" class="img-user"/>
+      <button mat-icon-button (click)="logout()" class="btn-logout"><mat-icon>exit_to_app</mat-icon> </button>
+    </span>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+  <mat-sidenav [(opened)]="opened" mode="side">
+
+    <mat-nav-list>
+      <mat-list-item><a routerLink="home">
+        <mat-icon>home</mat-icon>
+        Home</a></mat-list-item>
+      <mat-list-item><a>
+        <mat-icon>widgets</mat-icon>
+        Dashboard</a></mat-list-item>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-list-item><a>
+            <mat-icon>person</mat-icon>
+            Admin</a></mat-list-item>
+        </mat-expansion-panel-header>
+        <mat-list-item><a routerLink="employee">Employee</a></mat-list-item>
+        <mat-list-item><a routerLink="user">User</a></mat-list-item>
+        <mat-list-item><a>Privilege</a></mat-list-item>
+        <mat-list-item><a>Emp. Attendance</a></mat-list-item>
+        <mat-list-item><a>Task</a></mat-list-item>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-list-item><a>
+            <mat-icon>event_note</mat-icon>
+            Academic</a></mat-list-item>
+        </mat-expansion-panel-header>
+        <mat-list-item><a>Program</a></mat-list-item>
+        <mat-list-item><a>Course</a></mat-list-item>
+        <mat-list-item><a>Batch</a></mat-list-item>
+        <mat-list-item><a>Payment Schedule</a></mat-list-item>
+        <mat-list-item><a>Course Material</a></mat-list-item>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-list-item><a>
+            <mat-icon>person_add</mat-icon>
+            Registration</a></mat-list-item>
+        </mat-expansion-panel-header>
+        <mat-list-item><a>Student</a></mat-list-item>
+        <mat-list-item><a>Batch Registration</a></mat-list-item>
+        <mat-list-item><a>Payments</a></mat-list-item>
+        <mat-list-item><a>Mat. Distribution</a></mat-list-item>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-list-item><a>
+            <mat-icon>class</mat-icon>
+            Class</a></mat-list-item>
+        </mat-expansion-panel-header>
+        <mat-list-item><a>Class Schedule</a></mat-list-item>
+        <mat-list-item><a>Attendance</a></mat-list-item>
+        <mat-list-item><a>Progress Review</a></mat-list-item>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-list-item><a>
+            <mat-icon>poll</mat-icon>
+            Reports</a></mat-list-item>
+        </mat-expansion-panel-header>
+        <mat-list-item><a>Payment Reports</a></mat-list-item>
+        <mat-list-item><a>Attendance Report</a></mat-list-item>
+        <mat-list-item><a>Academic Reports</a></mat-list-item>
+      </mat-expansion-panel>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

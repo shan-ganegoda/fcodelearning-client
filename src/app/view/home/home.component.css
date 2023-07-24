@@ -1,0 +1,20 @@
+mat-grid-list {
+  padding: 10% 20% 10% 20% !important;
+  margin: 20px;
+}
+
+mat-grid-list mat-grid-tile:nth-child(1) {
+  background-color: darkslategray !important;
+  min-height: 100px !important;;
+}
+
+img {
+  width: 50%;
+  height: 80%;
+}
+
+mat-card {
+  height: 80% !important;
+  width: 200px;
+  margin: 10px;
+}
