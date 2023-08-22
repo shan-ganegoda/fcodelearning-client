@@ -1,20 +1,57 @@
-mat-grid-list {
-  padding: 10% 20% 10% 20% !important;
-  margin: 20px;
+mat-card{
+  height: 100%;
+  width: 100%;
 }
 
-mat-grid-list mat-grid-tile:nth-child(1) {
-  background-color: darkslategray !important;
-  min-height: 100px !important;;
+mat-card mat-card-content span {
+  font-size: 20px;
+  margin-left: 2rem;
 }
 
-img {
-  width: 50%;
-  height: 80%;
+mat-card mat-card-content h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin : 2rem 0 0 2rem;
 }
 
-mat-card {
-  height: 80% !important;
-  width: 200px;
-  margin: 10px;
+mat-card mat-card-content p {
+  margin : 2rem 0 0 2rem;
 }
+
+button{
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+
+button[color="primary"] {
+  background: blue;
+  color: white;
+  margin: 2rem 0 0 2rem;
+}
+
+button[color="basic"] {
+  margin: 2rem 0 0 2rem;
+}
+
+.homegirl{
+  width: 100%;
+  height: 100%;
+}
+
+.back1{
+  position: absolute;
+
+}
+
+
+/*img {*/
+/*  width: 50%;*/
+/*  height: 80%;*/
+/*}*/
+
+/*mat-card {*/
+/*  height: 80% !important;*/
+/*  width: 200px;*/
+/*  margin: 10px;*/
+/*}*/

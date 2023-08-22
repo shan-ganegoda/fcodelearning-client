@@ -9,6 +9,20 @@ import {Router} from "@angular/router";
 })
 export class MainwindowComponent {
 
+  status = false;
+  addToggle()
+  {
+    this.status = !this.status;
+  }
+
+  hidden = false;
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
+
+  visible : string = "/assets/menuv.png"
+  notvisible : string = "/assets/menunv.png"
+
   opened: boolean = true;
 
   user:string = "Lakshan Ruwinda";

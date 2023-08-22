@@ -6,6 +6,7 @@ import {EmployeeComponent} from "./view/modules/employee/employee.component";
 import {HomeComponent} from "./view/home/home.component";
 import {UserComponent} from "./view/modules/user/user.component";
 import {SignupComponent} from "./view/signup/signup.component";
+import {CourcesComponent} from "./view/modules/cources/cources.component";
 
 const routes: Routes = [
   {path: "login", component: LoginComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
       {path: "home", component: HomeComponent},
       {path: "employee", component: EmployeeComponent},
       {path: "user", component: UserComponent},
+      {path: "cources", component: CourcesComponent},
     ]
   }];
 

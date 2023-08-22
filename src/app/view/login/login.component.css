@@ -33,6 +33,8 @@
 
 mat-card {
   width: 25%;
+  position: absolute;
+  right: 10;
   border: #003300;
   border-radius: 25px !important;
   box-shadow: black 2px 2px 15px;
@@ -45,17 +47,19 @@ mat-card-header {
   border-radius: 25px !important;
 }
 
-mat-card-title div {
+mat-card-title{
   /*width: 100%;*/
   /*height: 100%;*/
-  background-color: green;
-  border-radius: 62% 38% 49% 51% / 54% 60% 40% 46% ;
+  /*background-color: green;*/
+  /*border-radius: 62% 38% 49% 51% / 54% 60% 40% 46% ;*/
+  /*display: flex;*/
+  /*justify-content: center; !* align horizontal *!*/
+  /*align-items: center; !* align vertical *!*/
 }
 
 mat-card-title p {
   color: #1E90FF;
-  display: flex;
-  margin-left: 8vw;
+  margin-left: 7.5vw;
   font-family: poppins-bold;
   font-size: 2rem;
 
