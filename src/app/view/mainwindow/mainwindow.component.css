@@ -58,6 +58,16 @@ mat-toolbar-row {
   margin: 0px 0px 0px -5px;
 }
 
+.notificationi{
+  font-size: 1.2rem;
+}
+
+.badgebutton{
+  border: none;
+  background: white;
+  margin-right: 1rem;
+}
+
 
 /* Side Navigation */
 

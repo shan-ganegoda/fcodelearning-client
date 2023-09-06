@@ -1,7 +1,26 @@
+.sectionhead{
+  width: 100%;
+  height: 4rem;
+  background: #1E90FF;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-top-left-radius: 5px;
+  box-shadow: black;
+}
+
+.sectionhead h1{
+  font-weight: 900;
+  color: white;
+  position: relative;
+  top: 25%;
+  left: 1.7rem;
+}
+
 mat-card{
   width: 300px;
-  height: 300px;
-  background: #1E90FF;
+  height: 350px;
+  background: rgba(255,255,255,0.8);
+  color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /*mat-card:hover{*/
@@ -9,12 +28,47 @@ mat-card{
 /*  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
 /*  animation-delay: 5s;*/
 /*}*/
+
 .tabs{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+
 }
+
+.courceinfo{
+  position: absolute;
+  bottom: 4rem;
+}
+
+.courceinfo i{
+  padding: 0 5px;
+}
+
+.actionbutton{
+  background: #1E90FF;
+  color: white !important;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+mat-card-content img{
+  width: 100%;
+  height: 13rem;
+}
+
+mat-card-content p{
+  width: 270px;
+  height: fit-content;
+  position: absolute;
+  background: black;
+  top: 160px;
+}
+
+
 
 
