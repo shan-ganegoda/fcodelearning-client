@@ -1,0 +1,47 @@
+<main class="main">
+
+  <header class="coverHeader">
+    <img src="../assets/js.png" class="coverimg" alt="cover">
+    <p class="coverTitle">Javascript For Beginners</p>
+    <p class="coverDescription">
+      JavaScript is a versatile and widely used programming language that empowers web developers to add
+      interactivity and dynamic behavior to websites. It operates primarily in web browsers, enabling the
+      creation of dynamic web applications, interactive forms, animations, and more. JavaScript is known for
+      its simplicity and flexibility, making it accessible to beginners while offering advanced features for
+      seasoned developers. With its ability to manipulate HTML and CSS, JavaScript plays a pivotal role in
+      enhancing the user experience on the internet, from responsive web design to sophisticated web applications.
+      Its ubiquity in web development makes it an essential tool for building modern, interactive websites.
+    </p>
+  </header>
+
+  <div class="details">
+    <p><i class='bx bxs-time'></i>  1.5h Duration</p>
+    <p><i class='bx bxs-objects-vertical-bottom' ></i>  Beginner Level</p>
+    <p><i class='bx bxs-videos' ></i>  2 Videos</p>
+    <p><i class='bx bx-certification' ></i>  Certificate Cource</p>
+  </div>
+
+  <div class="actionBar">
+    <button class="enrollbtn" (click)="message()" mat-raised-button>Enroll</button>
+    <span class="wishlist"><i class='bx bxs-bookmark-heart' ></i></span>
+    <button class="goto" *ngIf="toggleBtn" routerLink="../content/{{cources}}" mat-raised-button>Go To Cource</button>
+  </div>
+
+  <div class="author">
+    <img  src="../assets/author.png" alt="AuthorImg">
+    <p class="bio">
+      I am a seasoned JavaScript Software Engineer with over 5 years of experience in the dynamic world of web
+      development. My journey in programming began with a fascination for creating interactive web experiences,
+      and I've since honed my skills to become a proficient developer. My expertise lies in crafting clean,
+      efficient, and maintainable JavaScript code that breathes life into websites and applications.
+      I'm well-versed in the latest web technologies and frameworks, such as React and Node.js, and I enjoy
+      tackling challenges to deliver innovative solutions. With a keen eye for detail and a passion for
+      user-centric design, I am committed to crafting web experiences that both delight users and exceed
+      client expectations. Whether it's front-end magic or back-end wizardry, I'm always eager to push the
+      boundaries of what's possible with JavaScript.
+    </p>
+  </div>
+
+
+
+</main>

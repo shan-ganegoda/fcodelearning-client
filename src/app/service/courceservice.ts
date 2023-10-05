@@ -18,6 +18,16 @@ export class Courceservice{
       return [];
     }
     return cources;
+    // console.log(cources);
+  }
+
+  async getCource(id:any):Promise<Cources[]>{
+
+    const cources = await this.http.get<Array<Cources>>('http://localhost:8080/cources/'+ id).toPromise();
+    if(cources == undefined){
+      return [];
+    }
+    return cources;
     console.log(cources);
   }
 

@@ -8,11 +8,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 })
 export class MessageComponent {
 
-  lines?: [];
-
-  constructor(public dialogRef: MatDialogRef<MessageComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {
-
-    this.lines = this.data.message.split('<br>').filter((line:string) => line !== '');
+  constructor(public dialogRef: MatDialogRef<MessageComponent>) {
   }
 
   ngOnInit(): void {
@@ -21,6 +17,7 @@ export class MessageComponent {
 
   onNoClick(): void {
     this.dialogRef.close();
+
   }
 
 

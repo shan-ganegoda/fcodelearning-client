@@ -1,11 +1,9 @@
-<mat-card>
-  <mat-card-title>{{data.heading}}</mat-card-title>
+<mat-card class="enrollmsg">
   <mat-card-content>
-    <ng-container *ngFor="let line of lines">
-      <span>{{line}}</span><br/>
-    </ng-container>
+    <p>Congradulations!</p>
+    <p>You Have Enrolled To JavaScript Beginners Cource</p>
   </mat-card-content>
-  <mat-dialog-actions>
-    <button mat-raised-button [mat-dialog-close]="true"> OK</button>
-  </mat-dialog-actions>
+  <mat-card-actions>
+    <button (click)="onNoClick()">Ok</button>
+  </mat-card-actions>
 </mat-card>

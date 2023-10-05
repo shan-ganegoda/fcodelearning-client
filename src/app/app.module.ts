@@ -35,6 +35,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatBadgeModule} from "@angular/material/badge";
 import { CourcesComponent } from './view/modules/cources/cources.component';
+import { CourceviewComponent } from './view/pages/courceintro/courceview.component';
+import { CourcecontentComponent } from './view/pages/courcecontent/courcecontent.component';
 
 
 
@@ -49,7 +51,9 @@ import { CourcesComponent } from './view/modules/cources/cources.component';
     MessageComponent,
     ConfirmComponent,
     SignupComponent,
-    CourcesComponent
+    CourcesComponent,
+    CourceviewComponent,
+    CourcecontentComponent
 
   ],
   imports: [

@@ -7,6 +7,8 @@ import {HomeComponent} from "./view/home/home.component";
 import {UserComponent} from "./view/modules/user/user.component";
 import {SignupComponent} from "./view/signup/signup.component";
 import {CourcesComponent} from "./view/modules/cources/cources.component";
+import {CourceviewComponent} from "./view/pages/courceintro/courceview.component";
+import {CourcecontentComponent} from "./view/pages/courcecontent/courcecontent.component";
 
 const routes: Routes = [
   {path: "login", component: LoginComponent},
@@ -20,6 +22,8 @@ const routes: Routes = [
       {path: "employee", component: EmployeeComponent},
       {path: "user", component: UserComponent},
       {path: "cources", component: CourcesComponent},
+      {path: "view/:id" , component: CourceviewComponent},
+      {path: "content/:id" , component: CourcecontentComponent},
     ]
   }];
 

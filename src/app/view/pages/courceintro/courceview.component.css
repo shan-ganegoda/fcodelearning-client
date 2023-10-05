@@ -1,0 +1,93 @@
+.main{
+  margin-top: 1rem;
+}
+
+.coverHeader{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coverimg{
+
+  width: 50%;
+  height: 25rem;
+}
+
+.coverTitle{
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.coverDescription{
+  margin-top: 1rem;
+  width: 70rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.details{
+  margin-left: 20rem;
+  margin-top: 2rem;
+}
+
+.details p{
+  font-size: 1.3rem;
+}
+
+.details p i{
+  color: #1E90FF;
+  line-height: 2rem;
+}
+
+.actionBar{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 3rem;
+}
+
+.enrollbtn{
+  padding: 1.5rem !important;
+  background-color: #1E90FF !important;
+  color: white !important;
+}
+
+.goto{
+  padding: 1.5rem;
+  /*display: none;*/
+}
+
+.wishlist{
+  font-size: 3rem;
+}
+
+.wishlist:active{
+  color: red;
+  font-size: 3rem;
+}
+
+.author{
+   position: relative;
+   top: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.author img{
+  width: 30rem;
+  height: 25rem;
+}
+
+.author p{
+  width: 20rem;
+  font-size: 1rem;
+}
+
+
+
+
