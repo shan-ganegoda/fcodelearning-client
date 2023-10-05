@@ -32,6 +32,11 @@ import {ConfirmComponent} from "./util/dialog/confirm/confirm.component";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import { SignupComponent } from './view/signup/signup.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import {MatMenuModule} from "@angular/material/menu";
+import {MatBadgeModule} from "@angular/material/badge";
+import { CourcesComponent } from './view/modules/cources/cources.component';
+import { CourceviewComponent } from './view/pages/courceintro/courceview.component';
+import { CourcecontentComponent } from './view/pages/courcecontent/courcecontent.component';
 
 
 
@@ -45,7 +50,10 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     UserComponent,
     MessageComponent,
     ConfirmComponent,
-    SignupComponent
+    SignupComponent,
+    CourcesComponent,
+    CourceviewComponent,
+    CourcecontentComponent
 
   ],
   imports: [
@@ -73,6 +81,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
     MatNativeDateModule,
     MatIconModule,
     MatCheckboxModule,
+    MatMenuModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

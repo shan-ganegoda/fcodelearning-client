@@ -9,12 +9,12 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background: url("/assets/wave.svg") bottom center no-repeat ;
 }
 
 
 mat-form-field {
   margin: -5px !important;
+
   width: 100%;
 }
 
@@ -22,19 +22,23 @@ mat-form-field {
   min-height: 28px !important;
   padding-top: 8px !important;
   padding-bottom: 8px !important;
+
 }
 
 .mat-mdc-form-field .mat-mdc-floating-label.mdc-floating-label {
   padding-bottom: 15px;
   font-size: 14px !important;
+
 }
 
 mat-form-field input {
   font-size: 14px !important;
+
 }
 
 .mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-floating-label {
   color: darkred !important;
+
 }
 
 

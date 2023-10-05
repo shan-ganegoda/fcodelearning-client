@@ -1,7 +1,7 @@
 /* Tool Bar */
 
 mat-toolbar-row {
-  background-color: #435f3b;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -31,18 +31,18 @@ mat-toolbar-row {
 
 
 .btn-nav.mat-mdc-icon-button {
-  background-color: #2b3815;
+  background-color: #1E90FF;
   color: #ffffff;
   vertical-align: middle;
-  box-shadow: 1px 1px 6px #333333;
-  border: #c0d9c3 solid 2px;
+  /*box-shadow: 1px 1px 6px #333333;*/
+  border: #1E90FF solid 2px;
   padding: 10px;
   --mat-mdc-button-ripple-color: rgba(255, 255, 255, 0.2);
 }
 
 .lbl-user {
   font-size: 14px;
-  color: white;
+  color: black;
   margin: 0px 5px 0px 0px;
 }
 
@@ -56,6 +56,16 @@ mat-toolbar-row {
   color: white;
   border-radius: 0px;
   margin: 0px 0px 0px -5px;
+}
+
+.notificationi{
+  font-size: 1.2rem;
+}
+
+.badgebutton{
+  border: none;
+  background: white;
+  margin-right: 1rem;
 }
 
 
@@ -76,24 +86,34 @@ mat-sidenav a {
 }
 
 mat-sidenav mat-icon {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0px 0px -10px 0px;
 }
 
 mat-nav-list mat-list-item {
   height: 35px;
   font-size: 14px;
-  padding: 0px 5px 0px 10px;
+  padding: 30px 0 30px 40px;
+  margin-top: 10px;
   /*border-bottom: #8aa88a 2px solid;*/
 }
 
 mat-nav-list mat-list-item:hover {
-  background: #b5d3b5;
+  background: #fff;
+  border-radius: 0 25px 25px 0;
+  border-left: 10px black solid;
+}
+
+mat-list-item.active{
+  border-radius: 0 25px 25px 0;
+  border-left: 10px black solid;
+  background: #eee;
 }
 
 mat-nav-list mat-expansion-panel {
   box-shadow: none;
   border-radius: unset;
+  margin-top: 10px;
 }
 
 mat-nav-list mat-expansion-panel-header {
@@ -102,12 +122,22 @@ mat-nav-list mat-expansion-panel-header {
 }
 
 mat-nav-list mat-expansion-panel-header:hover {
-  background: #b5d3b5 !important;
+  background: #fff !important;
 }
 
 mat-nav-list mat-expansion-panel mat-list-item {
   height: 28px;
 }
+
+footer{
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+/*------------Mat Menu----------*/
+
+
 
 
 

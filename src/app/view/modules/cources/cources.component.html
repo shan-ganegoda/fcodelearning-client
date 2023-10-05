@@ -1,0 +1,26 @@
+<main>
+  <section>
+    <div class="sectionhead">
+      <h1>Cources</h1>
+    </div>
+  </section>
+<div class="tabs">
+
+<mat-card *ngFor="let cource of cources">
+  <mat-card-header>
+    <p>{{cource.name}}</p>
+  </mat-card-header>
+  <mat-card-content>
+    <img src={{cource.photo.imageurl}} alt="Image"/>
+    <div class="courceinfo">
+      <i class='bx bxs-bar-chart-alt-2'></i>{{cource.level.name}}
+      <i class='bx bxs-dollar-circle'></i>{{cource.fee}}
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <a routerLink="../view/{{cource.id}}"  ><button mat-stroked-button class="actionbutton">Start Learning</button></a>
+  </mat-card-actions>
+</mat-card>
+
+</div>
+</main>
