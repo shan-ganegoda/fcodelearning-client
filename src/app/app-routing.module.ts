@@ -9,6 +9,7 @@ import {SignupComponent} from "./view/signup/signup.component";
 import {CourcesComponent} from "./view/modules/cources/cources.component";
 import {CourceviewComponent} from "./view/pages/courceintro/courceview.component";
 import {CourcecontentComponent} from "./view/pages/courcecontent/courcecontent.component";
+import {AboutComponent} from "./view/about/about.component";
 
 const routes: Routes = [
   {path: "login", component: LoginComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
       {path: "cources", component: CourcesComponent},
       {path: "view/:id" , component: CourceviewComponent},
       {path: "content/:id" , component: CourcecontentComponent},
+      {path: "about" , component: AboutComponent},
     ]
   }];
 

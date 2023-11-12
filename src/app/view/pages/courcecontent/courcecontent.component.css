@@ -1,0 +1,25 @@
+.detailbar{
+   background-color: #1E90FF;
+   height: 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.detailbar span{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 2rem;
+
+}
+
+mat-progress-spinner{
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.accordion{
+  margin-top: 1rem;
+}

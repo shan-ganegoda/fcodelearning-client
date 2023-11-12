@@ -1,0 +1,35 @@
+header{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top: 1rem;
+}
+
+.about__body{
+  position: relative;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about__description{
+  width: 80rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.creators{
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  top: 4rem;
+}
+
+.creators img{
+  width: 20rem;
+  height: 20rem;
+}

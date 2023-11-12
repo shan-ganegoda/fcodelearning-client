@@ -16,11 +16,22 @@ export class CourceviewComponent {
   toggleBtn = false;
   isEnrolled = true;
 
-  cources:Array<Cources> = [];
+  cource_id:any;
 
+  image:string = "";
+  courcename:string= "";
+  description:string = "";
+  duration: string = "";
+  level: string = "";
+  issertified: boolean = true;
+  videocount: number = 0;
 
+  certificatestatus:string = "";
 
+  wishlisted:boolean = false;
+  wishstatus:string = "wishlistd";
 
+  cources:any;
 
   constructor(private ar:ActivatedRoute,
               private cs:Courceservice,
@@ -28,11 +39,31 @@ export class CourceviewComponent {
   ) {
 
     this.ar.paramMap.subscribe(async a => {
-        // console.log(a.get("id"))
         this.cources = await this.cs.getCource(a.get("id"));
-      }
+        this.cource_id = a.get("id");
+      // console.log( this.cources.photo.id);
 
-    );
+      this.image = this.cources.photo.imageurl;
+      this.courcename = this.cources.name;
+      this.description = this.cources.description;
+      this.duration = this.cources.duration;
+      this.level = this.cources.level.name;
+      this.videocount = this.cources.videocount;
+      this.issertified = this.cources.issertified;
+
+      this.issertified ? this.certificatestatus = "Certificate Cource" : this.certificatestatus = " Not Certificate Cource";
+
+
+
+      // cource.photo.id
+
+      });
+
+     if(this.wishlisted){
+       this.wishstatus = "wishlista";
+     }else{
+       this.wishstatus = "wishlistd";
+     }
 
   }
 
@@ -49,6 +80,19 @@ message(){
       console.log("Course")
       this.toggleBtn = true;
     }
+}
+
+
+setWishList(){
+  this.wishlisted = !this.wishlisted;
+  console.log("Hello")
+
+  if(this.wishlisted){
+    this.wishstatus = "wishlista";
+  }else{
+    this.wishstatus = "wishlistd";
+  }
+
 }
 
 

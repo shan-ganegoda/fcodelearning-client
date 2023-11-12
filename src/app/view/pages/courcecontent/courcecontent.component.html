@@ -1,1 +1,25 @@
-<p>courcecontent works!</p>
+<mat-card class="detailbar">
+  <mat-progress-spinner
+    [diameter]="70"
+    [color]="color"
+    [mode]="mode"
+    [value]="value">
+  </mat-progress-spinner>
+
+  <span class="detail__Header"> JavaScript For Beginners</span>
+</mat-card>
+
+<mat-accordion class="accordion" *ngFor="let video of videos">
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{video.name}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{video.name}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <iframe width="560" height="315" [src]=video.url title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </mat-expansion-panel>
+
+</mat-accordion>

@@ -2,6 +2,7 @@ import {Level} from "./level";
 import {MainCategory} from "./maincategory";
 import {SubCategory} from "./subcategory";
 import {Photos} from "./photos";
+import {Lesson} from "./lesson";
 
 export class Cources{
 
@@ -13,8 +14,9 @@ export class Cources{
   mainCategory!: MainCategory;
   subCategory!: SubCategory;
   photo!: Photos;
+  lessonList!:Lesson;
 
-  constructor(id:number,name:string,authorId:number,fee:string,level: Level,mainCategory: MainCategory,subCategory: SubCategory,photo: Photos) {
+  constructor(id:number,name:string,authorId:number,fee:string,level: Level,mainCategory: MainCategory,subCategory: SubCategory,photo: Photos,lessonList:Lesson) {
     this.id = id;
     this.name = name;
     this.authorId = authorId;
@@ -23,6 +25,7 @@ export class Cources{
     this.mainCategory = mainCategory;
     this.subCategory = subCategory;
     this.photo = photo;
+    this.lessonList = lessonList;
   }
 
 }

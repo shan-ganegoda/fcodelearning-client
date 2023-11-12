@@ -60,14 +60,16 @@
   /*display: none;*/
 }
 
-.wishlist{
+.wishlista{
   font-size: 3rem;
+  color: red;
 }
 
-.wishlist:active{
-  color: red;
+.wishlistd{
   font-size: 3rem;
+  color: black;
 }
+
 
 .author{
    position: relative;

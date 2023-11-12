@@ -1,30 +1,22 @@
 <main class="main">
 
   <header class="coverHeader">
-    <img src="../assets/js.png" class="coverimg" alt="cover">
-    <p class="coverTitle">Javascript For Beginners</p>
-    <p class="coverDescription">
-      JavaScript is a versatile and widely used programming language that empowers web developers to add
-      interactivity and dynamic behavior to websites. It operates primarily in web browsers, enabling the
-      creation of dynamic web applications, interactive forms, animations, and more. JavaScript is known for
-      its simplicity and flexibility, making it accessible to beginners while offering advanced features for
-      seasoned developers. With its ability to manipulate HTML and CSS, JavaScript plays a pivotal role in
-      enhancing the user experience on the internet, from responsive web design to sophisticated web applications.
-      Its ubiquity in web development makes it an essential tool for building modern, interactive websites.
-    </p>
+    <img [src]=image class="coverimg" alt="cover">
+    <p class="coverTitle">{{courcename}}</p>
+    <p class="coverDescription">{{description}}</p>
   </header>
 
   <div class="details">
-    <p><i class='bx bxs-time'></i>  1.5h Duration</p>
-    <p><i class='bx bxs-objects-vertical-bottom' ></i>  Beginner Level</p>
-    <p><i class='bx bxs-videos' ></i>  2 Videos</p>
-    <p><i class='bx bx-certification' ></i>  Certificate Cource</p>
+    <p><i class='bx bxs-time'></i>  {{duration}}h Duration</p>
+    <p><i class='bx bxs-objects-vertical-bottom' ></i>  {{level}} Level</p>
+    <p><i class='bx bxs-videos' ></i>  {{videocount}} Videos</p>
+    <p><i class='bx bx-certification' ></i>  {{certificatestatus}}</p>
   </div>
 
   <div class="actionBar">
     <button class="enrollbtn" (click)="message()" mat-raised-button>Enroll</button>
-    <span class="wishlist"><i class='bx bxs-bookmark-heart' ></i></span>
-    <button class="goto" *ngIf="toggleBtn" routerLink="../content/{{cources}}" mat-raised-button>Go To Cource</button>
+    <span [class]=wishstatus (click)="setWishList()" ><i class='bx bxs-bookmark-heart' ></i></span>
+    <button class="goto" *ngIf="toggleBtn" routerLink="../../content/{{cource_id}}" mat-raised-button>Go To Cource</button>
   </div>
 
   <div class="author">

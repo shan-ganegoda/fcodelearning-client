@@ -37,6 +37,8 @@ import {MatBadgeModule} from "@angular/material/badge";
 import { CourcesComponent } from './view/modules/cources/cources.component';
 import { CourceviewComponent } from './view/pages/courceintro/courceview.component';
 import { CourcecontentComponent } from './view/pages/courcecontent/courcecontent.component';
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import { AboutComponent } from './view/about/about.component';
 
 
 
@@ -53,37 +55,39 @@ import { CourcecontentComponent } from './view/pages/courcecontent/courcecontent
     SignupComponent,
     CourcesComponent,
     CourceviewComponent,
-    CourcecontentComponent
+    CourcecontentComponent,
+    AboutComponent
 
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatGridListModule,
-    MatCardModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatInputModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatExpansionModule,
-    MatDialogModule,
-    MatOptionModule,
-    MatSelectModule,
-    MatButtonToggleModule,
-    MatTableModule,
-    HttpClientModule,
-    MatPaginatorModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatIconModule,
-    MatCheckboxModule,
-    MatMenuModule,
-    MatBadgeModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatGridListModule,
+        MatCardModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatButtonModule,
+        MatInputModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatListModule,
+        MatExpansionModule,
+        MatDialogModule,
+        MatOptionModule,
+        MatSelectModule,
+        MatButtonToggleModule,
+        MatTableModule,
+        HttpClientModule,
+        MatPaginatorModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatIconModule,
+        MatCheckboxModule,
+        MatMenuModule,
+        MatBadgeModule,
+        MatProgressSpinnerModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,12 @@
 /* Tool Bar */
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 mat-toolbar-row {
+  position: fixed;
+  top: 0;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -85,7 +91,7 @@ mat-sidenav a {
   color: black;
 }
 
-mat-sidenav mat-icon {
+mat-sidenav mat-icon,i {
   font-size: 20px;
   margin: 0px 0px -10px 0px;
 }
